@@ -17,7 +17,7 @@ public class HashImpl {
         private int N; //bucket or array size
         private LinkedList<Node> buckets[];
 
-        @SuppressWarning("unchecked")
+        @SuppressWarnings("unchecked")
         public HashMap() {
             this.N = 4;
             this.buckets = new LinkedList[4];
@@ -111,8 +111,7 @@ public class HashImpl {
                 int di = searchInLL(key,bi); // key exits if it returns zero or greater than zero , if di = -1 then key doesn't exist
 
                 if(di == -1) { // key doesn't exist
-                    buckets[bi].add(new Node(key, value));
-                    n++;
+                    return null;
 
                 }
                 else { //key exits 
