@@ -1,5 +1,8 @@
 import java.util.*;
 
+
+// using priority queue to get the minimum distance vertex
+// time complexity is O(ElogV) where E is the number of edges and V is the number of vertices
 public class DijkstraAlgo {
 
             static class Edge {
